@@ -1,7 +1,4 @@
 use clap::{command, ArgMatches, Command};
-pub fn add_two(a: i32) -> i32 {
-    a + 2
-}
 
 const APPHELP: &str = "A Python Package manger written in Rust";
 
