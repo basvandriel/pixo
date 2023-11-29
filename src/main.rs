@@ -1,5 +1,8 @@
-use pixo::create_cli;
+use pixo::{create_cli, handle_first_match};
 
 fn main() {
-    create_cli()
+    let cli = create_cli();
+    let matches = cli.get_matches();
+
+    handle_first_match(matches)
 }
