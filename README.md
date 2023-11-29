@@ -1,0 +1,4 @@
+# pixo
+
+## Running
+`cargo run`
