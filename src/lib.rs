@@ -1,3 +1,5 @@
+pub mod add;
+
 use clap::{command, ArgMatches, Command};
 
 const APPHELP: &str = "A Python Package manger written in Rust";
@@ -20,7 +22,7 @@ pub fn handle_first_match(matches: ArgMatches) {
 
     match payload {
         Some(("example", _matches)) => println!("did it work?"),
-        Some(("add", _matches)) => println!("hjadf"),
+        // Some(("add", _matches)) => add::install_pip_module(),
 
         // no match
         _ => unreachable!(),
